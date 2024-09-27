@@ -2756,59 +2756,61 @@ EstadoAct9 = Suelta9;
 EstadoAct10 = Suelta10;
 EstadoAct11 = Suelta11;
 EstadoAct12 = Suelta12;
-
+char Tecla;
 while (1) {
 
-llegadasPuerto;
+llegadasPuerto();
 
-switch(boya1){
+for(Tecla=0;Tecla<12;++)
+
+switch(Tecla){
 
 case 1:
-MaquinaTecla1;
+MaquinaTecla1();
 break;
 
 case 2:
-MaquinaTecla2;
+MaquinaTecla2();
 break;
 
 case 3:
-MaquinaTecla3;
+MaquinaTecla3();
 break;
 
 case 4:
-MaquinaTecla4;
+MaquinaTecla4();
 break;
 
 case 5:
-MaquinaTecla5;
+MaquinaTecla5();
 break;
 
 case 6:
-MaquinaTecla6;
+MaquinaTecla6();
 break;
 
 case 7:
-MaquinaTecla7;
+MaquinaTecla7();
 break;
 
 case 8:
-MaquinaTecla8;
+MaquinaTecla8();
 break;
 
 case 9:
-MaquinaTecla9;
+MaquinaTecla9();
 break;
 
 case 10:
-MaquinaTecla10;
+MaquinaTecla10();
 break;
 
 case 11:
-MaquinaTecla11;
+MaquinaTecla11();
 break;
 
 case 12:
-MaquinaTecla12;
+MaquinaTecla12();
 break;
 
 }
