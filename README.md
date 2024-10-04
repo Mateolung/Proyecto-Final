@@ -8,12 +8,12 @@ Proyecto Final: programacion
 
 Manual del PIC [PIC16F882/883/884/886/887 Data Sheet](https://ww1.microchip.com/downloads/en/DeviceDoc/40001291H.pdf)
 
-## Datos del alumno :nerd_face:
+## Datos del alumno:
 Completa con tus datos la siguiente tabla:
 Campo|Detalle
 ------|-----------
-Nombre| Santiago
-Apellido| Perez
+Nombre| ----
+Apellido| ----
 Curso| 6°Electrónica
 Año| 2024
 
@@ -38,7 +38,3 @@ SWITCH QUE MAQUINA DE ESTADOS SE USARA. EL SEGUNDO DATO SE USARA EN LA MAQUINA D
 TODO MAL. TRANSFORMAR TODO LO QUE TENIA DE LLEGADAS A ENVIADAS. HACER UN FOR QUE CUENTE DE 1 A 12
 PARA REVISAR TECLA POR TECLA EL ESTADO DE LA MAQUINA DE ESTADOS, MAQUINA DE ESTADOS QUE ENVIARA 2
 BYTES. EL TEMA DEL ORDEN DE ENVIADO DE LA FUNCION LLEGADASPUERTO ESTA BIEN.
-
-# Son parecidos pero ... :joy:
-
-![diferencia con whilw y do whilw](https://user-images.githubusercontent.com/64550311/124700300-df852a00-dec2-11eb-8dfe-207bfd057aba.jpg)
