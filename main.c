@@ -47,7 +47,7 @@ typedef enum{Tecla12, Apretada12, Suelta12} estadoMEF_t;
 estadoMEF_t EstadoAct12;
 tick_t tInicio; 
 /*==================[definiciones de datos externos]=========================*/
-uint8_t llegadaPuerto;
+uint8_t enviadasPuerto, llega;
 uint8_t llegadaOtravez;
 uint8_t boya1, boya2, numeroTecla, numero;
 
@@ -89,9 +89,9 @@ void main(void) {
     char Tecla;
     while (1) {
         
-        llegadasPuerto();
+        enviadasPuerto();
         
-        for(Tecla=0;Tecla<12;++)
+        for(Tecla=0;Tecla<=12;Tecla++){
             
         switch(Tecla){
             
@@ -144,7 +144,7 @@ void main(void) {
             break;
             
         }
-        
+        }
         
         if(uartReadByte(numero))
         {
@@ -199,14 +199,21 @@ void main(void) {
 
 
 void MaquinaTecla1(void){
-    switch (boya2){
+    switch (Tecla1){
             case 0:
                 
+                enviadasPuerto();
                 
+                if (uartReadByte(llega==1)){
+                    Tecla1 = 1;
+                }
                 break;
                 
             case 1:
                 numero = 1;
+                if (uartReadByte(llega==0)){
+                    Tecla1 = 0;
+                }
                 break;
     
     }
@@ -247,17 +254,17 @@ void MaquinaTecla12(void){
 
 
 
-void llegadasPuerto(void){
+void enviadasPuerto(void){
     
-    while(uartReadByte(llegadaPuerto)==1){
+    while(uartWriteByte(enviadasPuerto)==1){
         
-        boya1 = uartReadByte(llegadaPuerto);
-        numeroTecla = llegadaPuerto;
+        boya1 = uartWriteByte(enviadasPuerto);
+        numeroTecla = llegadaOtravez;
         
         
         
-        if (uartReadByte(llegadaPuerto)==1){
-            boya2 = llegadaPuerto;
+        if (uartWriteByte(enviadasPuerto)==1){
+            boya2 = llegadaOtravez;
         }
     }
     

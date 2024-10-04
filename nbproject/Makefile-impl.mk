@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=proyecto
+PROJECTNAME=Proyecto-Final-Firmware
 
 # Active Configuration
 DEFAULTCONF=pickit3
